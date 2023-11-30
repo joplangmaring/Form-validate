@@ -1,16 +1,18 @@
-
 /* styles.css */
+
+/* Common styles for all screen sizes */
+
 .form-container {
   display: flex;
   justify-content: center;
 }
-
 
 fieldset {
   border: 1px solid #333;
   padding: 20px;
   margin: 10px;
   width: 400px;
+  border: red solid;
 }
 
 legend {
@@ -21,7 +23,6 @@ legend {
   margin-bottom: 10px;
 }
 
-/* Apply Flexbox to the div containing the input elements */
 div {
   display: flex;
   flex-direction: row;
@@ -29,31 +30,49 @@ div {
   margin-bottom: 10px; /* Optional: Add spacing between each div */
 }
 
-/* Optional: Add specific styles for labels, if needed */
 label {
   width: 20%;
   margin-right: 7px;
 }
-/* input[type="text"]:valid,input[type="email"]:valid,input[type="tel"]:valid {
-  background-color: ivory;
-  border: none;
-  outline: 1px solid rgb(32, 203, 52);
-} */
-/* input[type="text"].error,input[type="email"].error,input[type="tel"].error {
-  background-color: ivory;
-  border: none;
-  outline: 1px solid red;
-}
-input[type="radio"].error,input[type="checkbox"].error{
-  border: 1px solid red;
-} */
+
 input:focus {
   outline: none;
 }
 
-select:focus{
+select:focus {
   outline: none;
 }
-input.error{
+
+input.error {
   border: 1px solid red;
 }
+
+/* Media queries for responsive design */
+
+/* For screens 600 pixels and below */
+@media only screen and (max-width: 576px) {
+  fieldset {
+    width: 80%;
+  }
+
+  label {
+    width: 90%;
+    margin-bottom: 5px;
+  }
+
+  div {
+    flex-direction: column;
+  }
+}
+
+/* For screens 768 pixels and below */
+@media only screen and (max-width: 768px) {
+  /* Add specific styles for this screen size if needed */
+}
+
+/* For screens 1024 pixels and below */
+@media only screen and (max-width: 1024px) {
+  /* Add specific styles for this screen size if needed */
+}
+
+/* Add more media queries for other screen sizes as needed */
