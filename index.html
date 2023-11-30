@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="myForm" action="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required/>
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address Details</legend>
+    
+        <div>
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="travel" name="interests" value="travel" >
+        <label for="travel">Travel</label>
+        </div>
+        
+        <div>
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+              <option value="">Please select a country</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="canada">Canada</option>
+              <option value="australia">Australia</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" >
+        </div>
+
+        <div>
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="male" >
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female" > 
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+
+        <div>
+           <label for="uploadedFile">Choose a file:</label>
+           <input type="file" name="uploadedFile" id="uploadedFile" required accept=".jpg, .png, .pdf">
+        </div>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+

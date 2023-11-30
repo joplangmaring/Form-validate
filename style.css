@@ -1,0 +1,59 @@
+
+/* styles.css */
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+fieldset {
+  border: 1px solid #333;
+  padding: 20px;
+  margin: 10px;
+  width: 400px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+/* Apply Flexbox to the div containing the input elements */
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px; /* Optional: Add spacing between each div */
+}
+
+/* Optional: Add specific styles for labels, if needed */
+label {
+  width: 20%;
+  margin-right: 7px;
+}
+/* input[type="text"]:valid,input[type="email"]:valid,input[type="tel"]:valid {
+  background-color: ivory;
+  border: none;
+  outline: 1px solid rgb(32, 203, 52);
+} */
+/* input[type="text"].error,input[type="email"].error,input[type="tel"].error {
+  background-color: ivory;
+  border: none;
+  outline: 1px solid red;
+}
+input[type="radio"].error,input[type="checkbox"].error{
+  border: 1px solid red;
+} */
+input:focus {
+  outline: none;
+}
+
+select:focus{
+  outline: none;
+}
+input.error{
+  border: 1px solid red;
+}
