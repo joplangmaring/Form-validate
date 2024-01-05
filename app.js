@@ -87,32 +87,7 @@ myform.addEventListener('click', () => {
    
 });
 
-// function validateFile(file) {
-//    const allowedTypes = ["image/jpeg", "image/png", "application/pdf"];
-//    const maxSize = 60 * 1024; // 60 KB in bytes
 
-//   if (file.size > maxSize) {
-//     fileInput.setCustomValidity(" please exceeds only (60 KB).");
-//        fileInput.setCustomValidity(`File is too big. Please select a file smaller than ${maxFileSizeKB} KB (Current size: ${actualFileSizeKB.toFixed(2)} KB).`);
-//     fileInput.reportValidity();
-//        const maxFileSizeKB = maxSize / 1024;
-//        const actualFileSizeKB = file.size / 1024;
-//     fileInput.value = ""; // Clear the file input to allow reselection
-//     return;
-//   }
-
-// if (!allowedTypes.includes(file.type)) {
-//     // Invalid file type
-//     fileInput.setCustomValidity("Please select a valid file type (JPEG, PNG, or PDF).");
-//     fileInput.reportValidity();
-//     fileInput.value = ""; // Clear the file input to allow reselection
-//     return;
-//   }
-
-
-//   // File is valid, clear custom validity
-//   fileInput.setCustomValidity("");
-// }
 
 
 
